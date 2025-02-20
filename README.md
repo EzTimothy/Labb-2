@@ -50,18 +50,26 @@ By varying some of these parameters whe can make the model fit more closely or m
 
 ### 4. 
 
-The standard SVM classifier works only if you have a well separated categories. To be more specific, they need to be linearly separable. It means there exist a line (or hyperplane) such that all points belonging to a single category are either below or above it. In many cases that condition is not satisfied, but still the two classes are pretty much separated except some small training data where the two categories overlap. It wouldn’t be a huge error if we would draw a line (somewhere in between) and accept some level of error - having training data on the wrong side of the marginal hyperplanes. How do we measure the error? The answer is: slack variables. For each training data point we can define a variable that measures the distance of the point to its marginal hyperplane, lets call it ξi. Whenever the point is on the wrong site of the marginal hyperplane we quantify the amount of error by the ratio between ξi and half of the margin, i.e. distance between separating hyperplane and marginal hyperplane (M in the figure). Points on the correct site are not quantified as errors. This is a geometrical interpretation of slack variables ξi. You can now go back to the initial SVM problem and maximize the margin in the presence of errors. The larger the error that you allow for, the wider the margin.
+The slack parameter C in an SVM controls the trade-off between maximizing the margin and minimizing classification errors. It allows for soft-margin SVM, meaning that some points can be misclassified if it helps improve generalization.
 
-The larger C is, the larger the smaller the decision boundary margin is. Ie the larger the parameters alpha are allowed to be. 
+If C is very large:
 
-#### Illustration of slack parameter C with linearly overlapping datasets
+The optimizer strongly penalizes misclassified points.
+The model prioritizes correct classification over a large margin.
+The decision boundary may become tightly fitted to the data, which can lead to overfitting (poor generalization to new data).
 
-| Linear kernel with overlapping datasets (C=0.5) | Linear kernel with overlapping datasets (C=1) | Linear kernel with overlapping datasets (C=2)
-| ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_linear_slack_C05.png "Linear kernel with overlapping datasets (C=0.5)") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_linear_slack_C1.png "Linear kernel with overlapping datasets (C=1)") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_linear_slack_C2.png "Linear kernel with overlapping datasets (C=2)") |
+If C is very small 
+
+The optimizer allows more misclassifications.
+The model prioritizes a larger margin over correctly classifying all points.
+The decision boundary becomes smoother and more generalized, but may misclassify some training points.
+
+
 
 ### 5. 
 
 Tradeoff: maximize margin / minimize error. Increase value of C parameter: weight of missclassified points increase => margin gets smaller.   
 
 A more complex kernel might overfit the training data, while the increased slack tolerance will likely provide better generilization. To this end, a more complex kernel will decrease bias and increase variance, while underfitting with a simpler model and higher slack might underfit the training set and yield high bias and low variance. 
+
+Use higher slack (C) when data is mostly linear with some noise or outliers to avoid overfitting. Use a more complex kernel when data is clearly non-linearly separable and a linear model fails, especially with a large dataset
