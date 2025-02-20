@@ -32,9 +32,9 @@ The following plots without slack variables.
 | ------------------------------------ | ------------------------------------ |
 | ![](Graphs/Radialsig1.png) | ![](Graphs/Radialsig2.png) |  
 
-| Radial kernel with provided datasets (sigma=3) | 
-| ------------------------------------ | 
-| ![](Graphs/Radialsig3.png) | 
+| Radial kernel with provided datasets (sigma=3) |  |
+| ------------------------------------ | ------------------------------------ |
+| ![](Graphs/Radialsig3.png) | ![]() | 
 
 #### Succcessful classification of nonlinearly separable dataset with polynomial and radial kernels 
 
