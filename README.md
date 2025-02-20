@@ -22,25 +22,25 @@ The following plots without slack variables.
 
 | Polynomial kernel with provided datasets (p=2) | Polynomial kernel with provided datasets (p=3) |
 | ------------------------------------ | ------------------------------------ |
-| ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_polynomial_2_noslack.png "Polynomial kernel with provided datasets (p=2)") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_polynomial_3_noslack.png "Polynomial kernel with provided datasets (p=3)") |  
+| ![](Graphs/PolynomailProvided.png) | ![](Graphs/PolynomialProvidedp3.png) |  
 
 | Polynomial kernel with provided datasets (p=4) | Polynomial kernel with provided datasets (p=5) |
 | ------------------------------------ | ------------------------------------ |
-| ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_polynomial_4_noslack.png "Polynomial kernel with provided datasets (p=4)") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_polynomial_5_noslack.png "Polynomial kernel with provided datasets (p=5)") |  
+| ![](Graphs/Polynomailprovidedp4.png) | ![](Graphs/Polynomailprovidedp5.png) |  
 
 | Radial kernel with provided datasets (sigma=1) | Radial kernel with provided datasets (sigma=2) |
 | ------------------------------------ | ------------------------------------ |
-| ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_radial_1_noslack.png "Radial kernel with provided datasets (sigma=1)") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_radial_2_noslack.png "Radial kernel with provided datasets (sigma=2)") |  
+| ![](Graphs/Radialsig1.png) | ![](Graphs/Radialsig2.png) |  
 
-| Radial kernel with provided datasets (sigma=1) | Radial kernel with provided datasets (sigma=3) |
-| ------------------------------------ | ------------------------------------ |
-| ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_radial_3_noslack.png "Radial kernel with provided datasets (sigma=3)") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_radial_4_noslack.png "Radial kernel with provided datasets (sigma=4)") |  
+| Radial kernel with provided datasets (sigma=3) | 
+| ------------------------------------ | 
+| ![](Graphs/Radialsig3.png) | 
 
 #### Succcessful classification of nonlinearly separable dataset with polynomial and radial kernels 
 
 | Polynomial kernel with nonlinear datasets (p=2) | Radial kernel with nonlinear datasets (sigma=2) |
 | ------------------------------------ | ------------------------------------ |
-| ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_polynomial_2_nonlineardata.png "Polynomial kernel with nonlinear datasets (p=2)") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_radial_2_nonlineardata.png "Radial kernel with nonlinear datasets (sigma=2)") |  
+| ![](Graphs/Polynomailnonlinear.png) | ![](Graphs/RadialNonLinear.png) |  
 
 ### 3. 
 
