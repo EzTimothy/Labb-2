@@ -12,7 +12,7 @@ Using the provided datasets, a linear kernel provided a very tight-fitting separ
 
 | Linear kernel with provided datasets | Linear kernel with nonlinear dataset |
 | ------------------------------------ | ------------------------------------ |
-| ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_linear_noslack.png "Linear kernel with provided datasets") | ![](https://gits-15.sys.kth.se/antolu/DD2421/blob/master/Lab_2/assets/png/svmplot_linear_nonlineardata.png "Linear kernel with nonlinear datasets") |
+| ![](LinearData.png) | ![](LinearNonLinear.png) |
 
 ### 2. 
 
